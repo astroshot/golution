@@ -27,6 +27,7 @@ func counter(w http.ResponseWriter, r *http.Request) {
 
 func plotSinc(w http.ResponseWriter, r *http.Request) {
 	mu.Lock()
+	r.Header.Set("Content-Type", "image/svg+xml")
 	calc.DrawSinc(w)
 	mu.Unlock()
 }
