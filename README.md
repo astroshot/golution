@@ -1,4 +1,4 @@
 # learning_go
 
-Begin learning golang with basic algorithms
+A simple project to learn golang.
 
