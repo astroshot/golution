@@ -20,6 +20,7 @@ func TestArrayListAdd(t *testing.T) {
 	array.Add(1)
 	array.Add("str", 3, 4)
 	assert.Equal(t, array.Size(), 4)
+	assert.Equal(t, array.ToString(), "1, str, 3, 4")
 }
 
 func TestArrayListRemove(t *testing.T) {
