@@ -20,7 +20,7 @@ func TestArrayListAdd(t *testing.T) {
 	array.Add(1)
 	array.Add("str", 3, 4)
 	assert.Equal(t, array.Size(), 4)
-	assert.Equal(t, array.ToString(), "1, str, 3, 4")
+	assert.Equal(t, array.String(), "1, str, 3, 4")
 }
 
 func TestArrayListRemove(t *testing.T) {
@@ -48,7 +48,7 @@ func TestArrayListToString(t *testing.T) {
 	capacity := 10
 	array, _ := arraylist.New(capacity)
 	array.Add(0, 1, 2, 3, 4, 5, 6)
-	assert.Equal(t, array.ToString(), "0, 1, 2, 3, 4, 5, 6")
+	assert.Equal(t, array.String(), "0, 1, 2, 3, 4, 5, 6")
 }
 
 func TestArrayListInsert(t *testing.T) {
@@ -56,7 +56,7 @@ func TestArrayListInsert(t *testing.T) {
 	array, _ := arraylist.New(capacity)
 	array.Add(0, 1, 2, 3, 4, 5, 6)
 	array.Insert(3, 7, 8, 9)
-	assert.Equal(t, array.ToString(), "0, 1, 2, 7, 8, 9, 3, 4, 5, 6")
+	assert.Equal(t, array.String(), "0, 1, 2, 7, 8, 9, 3, 4, 5, 6")
 }
 
 func TestArrayListSwap(t *testing.T) {
@@ -64,5 +64,5 @@ func TestArrayListSwap(t *testing.T) {
 	array, _ := arraylist.New(capacity)
 	array.Add(0, 1, 2, 3, 4, 5, 6)
 	array.Swap(0, 4)
-	assert.Equal(t, array.ToString(), "4, 1, 2, 3, 0, 5, 6")
+	assert.Equal(t, array.String(), "4, 1, 2, 3, 0, 5, 6")
 }
