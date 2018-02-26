@@ -1,4 +1,16 @@
 # VSCode
 .vscode/
-src/debug
+
+# Folders
+_obj
+_test
+
+# Complied Object files
+*.o
+*.a
+*.so
+
+# debug files
 *.test
+*.prof
+src/debug

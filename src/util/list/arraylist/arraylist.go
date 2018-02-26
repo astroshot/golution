@@ -162,10 +162,10 @@ func (array *ArrayList) Insert(index int, values ...interface{}) error {
 	return nil
 }
 
-// ToString returns a string filled with values of ArrayList
-func (array *ArrayList) ToString() string {
+// String returns a string filled with values of ArrayList
+func (array *ArrayList) String() string {
 	str := ""
-	values := []string{}
+	values := make([]string, 0, array.size)
 	for _, value := range array.items[:array.size] {
 		values = append(values, fmt.Sprintf("%v", value))
 	}
