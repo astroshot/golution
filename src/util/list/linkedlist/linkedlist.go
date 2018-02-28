@@ -72,6 +72,19 @@ func (list *LinkedList) String() string {
 	return str
 }
 
+// ReverseString returns string consists of reversal values of LinkedList
+func (list *LinkedList) ReverseString() string {
+	str := ""
+	values := make([]string, 0, list.size)
+	cur := list.tail
+	for cur != nil {
+		values = append(values, fmt.Sprintf("%v", cur.value))
+		cur = cur.prev
+	}
+	str += strings.Join(values, ", ")
+	return str
+}
+
 func (list *LinkedList) inRange(index int) bool {
 	return index >= 0 && index < list.size
 }
