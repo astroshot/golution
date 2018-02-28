@@ -1,7 +1,7 @@
 package arraylist
 
 import (
-	arraylist "go_tools/src/util/list/arraylist"
+	arraylist "modules/src/util/list/arraylist"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

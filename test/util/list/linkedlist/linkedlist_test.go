@@ -1,7 +1,7 @@
 package linkedlist
 
 import (
-	"go_tools/src/util/list/linkedlist"
+	"modules/src/util/list/linkedlist"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
