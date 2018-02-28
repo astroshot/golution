@@ -1,7 +1,7 @@
 package linkedlist
 
 import (
-	"learning_go/src/util/list/linkedlist"
+	"go_tools/src/util/list/linkedlist"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -11,6 +11,7 @@ func TestLinkedListAdd(t *testing.T) {
 	list := linkedlist.New()
 	list.Add(0, 1, 2, 3)
 	assert.Equal(t, list.String(), "0, 1, 2, 3")
+	assert.Equal(t, list.ReverseString(), "3, 2, 1, 0")
 }
 
 func TestLinkedListReverse(t *testing.T) {

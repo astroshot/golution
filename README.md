@@ -1,4 +1,4 @@
-# learning_go
+# go_tools
 
 A simple project to learn golang.
 

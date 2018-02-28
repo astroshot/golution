@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	web "learning_go/src/web"
+	web "go_tools/src/web"
 )
 
 func main() {
