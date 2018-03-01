@@ -94,13 +94,19 @@ func (list *LinkedList) Get(index int) (interface{}, bool) {
 	if !list.inRange(index) {
 		return nil, false
 	}
-	i := 0
-	p := list.head
-	for i < index {
-		p = p.next
-		i++
+
+	var item *node
+	if list.size-index < index {
+		item = list.tail
+		for i := list.size - 1; i != index; i, item = i-1, item.prev {
+		}
+	} else {
+		item = list.head
+		for i := 0; i != index; i, item = i+1, item.next {
+		}
 	}
-	return p.value, true
+
+	return item.value, true
 }
 
 // Size returns number of items in LinkedList.
