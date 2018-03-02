@@ -15,7 +15,7 @@ import (
 
 在实际的业务种，我们可能会有这么一种场景：需要我们主动的通知某一个goroutine结束。比如我们开启一个后台goroutine一直做事情，比如监控，现在不需要了，就需要通知这个监控goroutine结束，不然它会一直跑，就泄漏了。
 */
-func testWaitGroup(t testing.T) {
+func TestWaitGroup(t *testing.T) {
 	var wg sync.WaitGroup
 	wg.Add(2)
 

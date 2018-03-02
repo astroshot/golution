@@ -13,7 +13,7 @@ import (
 
 发送了 stop <- true 结束的指令后，我这里使用 time.Sleep(5 * time.Second)故意停顿 5 秒来检测我们结束监控 goroutine 是否成功。如果成功的话，不会再有 `Monitor is on.` 的输出了；如果没有成功，监控 goroutine 就会继续打印 `Monitor is on.` 输出。
 */
-func testChanNotify(t testing.T) {
+func TestChanNotify(t *testing.T) {
 	stop := make(chan bool)
 	go func() {
 		for {
