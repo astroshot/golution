@@ -16,6 +16,7 @@ const (
 	blackIndex = 1
 )
 
+// Lissajous plots lissajous picture
 func Lissajous(out io.Writer) {
 	const (
 		cycles  = 5     // 完整的 x 振荡器变化的个数
