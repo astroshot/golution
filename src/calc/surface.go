@@ -13,11 +13,12 @@ const (
 	xyscale       = width / 2 / xyrange
 	zscale        = height * 0.4
 	angle         = math.Pi / 6
-	EPS           = 1E-16
+	eps           = 1E-16
 )
 
 var sin30, cos30 = math.Sin(angle), math.Cos(angle)
 
+// DrawSinc plots sinc(x)
 func DrawSinc(out io.Writer) {
 	fmt.Fprintf(out, "<html xmlns:svg=\"http://www.w3.org/2000/svg\">\n<body>")
 	fmt.Fprintf(out, "<svg xmlns='http://www.w3.org/2000/svg' "+
@@ -51,7 +52,7 @@ func corner(i, j int) (float64, float64) {
 
 func f(x, y float64) float64 {
 	r := math.Hypot(x, y)
-	if math.Abs(r) <= EPS {
+	if math.Abs(r) <= eps {
 		return 1
 	}
 	return math.Sin(r) / r
