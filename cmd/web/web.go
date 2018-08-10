@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	web "modules/src/web"
+	web "modules/pkg/web"
 )
 
 func main() {
