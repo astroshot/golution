@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"net/http"
@@ -9,7 +10,11 @@ import (
 )
 
 func main() {
-	fmt.Println("Initializing...")
+	addr := "localhost:%s"
+	port := flag.String("port", "8000", "http listen port")
+	flag.Parse()
+	addr = fmt.Sprintf(addr, *port)
+	fmt.Println("Listening port %s...", *port)
 	web.RegistHandlers()
-	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
