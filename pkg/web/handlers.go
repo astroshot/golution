@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"sync"
 
-	"modules/src/calc"
+	"modules/pkg/calc"
 )
 
 var mu sync.Mutex

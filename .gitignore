@@ -13,4 +13,5 @@ _test
 # debug files
 *.test
 *.prof
-src/debug
+pkg/debug
+bin/
