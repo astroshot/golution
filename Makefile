@@ -3,7 +3,7 @@ build:
 
 clean:
 	find . -name "*.o" -o -name "*.test" -o -name "debug" | xargs rm -f
-	rm ./bin/*
+	-rm bin/*
 
 start:
 	bin/web_api
