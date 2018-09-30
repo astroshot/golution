@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	web "modules/pkg/web"
+	web "golution/pkg/web"
 )
 
 func main() {

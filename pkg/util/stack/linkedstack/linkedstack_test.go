@@ -1,14 +1,13 @@
 package linkedstack
 
 import (
-	"modules/src/util/stack/linkedstack"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
 
 func TestLinkedStackPush(t *testing.T) {
-	stack := linkedstack.New()
+	stack := New()
 	stack.Push(1)
 	stack.Push("str")
 	assert.Equal(t, stack.Size(), 2)
@@ -23,7 +22,7 @@ func TestLinkedStackPush(t *testing.T) {
 }
 
 func TestLinkedStackPeak(t *testing.T) {
-	stack := linkedstack.New()
+	stack := New()
 	stack.Push(1)
 	stack.Push("str")
 	value, _ := stack.Peak()

@@ -5,11 +5,13 @@ import (
 	"net/http"
 	"sync"
 
-	"modules/pkg/calc"
+	"golution/pkg/calc"
 )
 
-var mu sync.Mutex
-var count int
+var (
+	mu    sync.Mutex
+	count int
+)
 
 func DefaultHandler(w http.ResponseWriter, r *http.Request) {
 	mu.Lock()

@@ -1,7 +1,7 @@
 package linkedstack
 
 import (
-	"modules/src/util/list/linkedlist"
+	"golution/pkg/util/list/linkedlist"
 )
 
 // LinkedStack provides stack interface with a double linked list.
