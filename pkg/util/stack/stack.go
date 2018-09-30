@@ -1,6 +1,6 @@
 package stack
 
-import "modules/src/util/container"
+import "golution/pkg/util/container"
 
 // Stack interface
 type Stack interface {

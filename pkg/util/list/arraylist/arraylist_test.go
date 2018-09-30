@@ -1,7 +1,7 @@
 package arraylist
 
 import (
-	arraylist "modules/src/util/list/arraylist"
+	arraylist "golution/pkg/util/list/arraylist"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

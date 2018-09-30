@@ -1,7 +1,7 @@
 package linkedlist
 
 import (
-	"modules/src/util/list/linkedlist"
+	"golution/pkg/util/list/linkedlist"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
