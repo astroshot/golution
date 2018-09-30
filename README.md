@@ -1,4 +1,4 @@
-# modules
+# golution
 
-A simple project to learn golang.
+A journey of a thousand miles begins with a single step.
 
