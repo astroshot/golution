@@ -7,3 +7,6 @@ clean:
 
 start:
 	bin/web_api
+
+format:
+	gofmt -w pkg cmd test
